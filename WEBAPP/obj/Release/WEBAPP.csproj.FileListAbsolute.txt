@@ -1,0 +1,13 @@
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Release\WEBAPP.dll
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Release\WEBAPP.pdb
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Release\WEBAPP.WEBAPP.apk
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Release\WEBAPP.WEBAPP-Signed.apk
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\WEBAPP.dll
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\WEBAPP.pdb
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\android\bin\WEBAPP.WEBAPP.apk
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\res\layout\main.xml
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\res\values\strings.xml
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\res\values\colors.xml
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\res\drawable\icon.png
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\R.cs.flag
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Release\uploadflags.txt

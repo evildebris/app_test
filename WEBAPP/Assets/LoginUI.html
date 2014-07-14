@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IT支撑</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/Jingle.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+
+<div id="aside_container">
+    <aside id="index_aside" data-position="left" data-transition="reveal" data-show-close="true">
+        <div class="header">菜单</div>
+        <div class="center" data-scroll="true" style="position:relative;">
+            <ul class="menu">
+                <li><a href="#index_section" data-icon="next" data-selected="selected" data-target="section">Index</a></li>
+                <li><a href="#layout_section" data-icon="next" data-selected="selected" data-target="section">layout</a></li>
+                <li><a href="#button_section" data-icon="next" data-selected="selected" data-target="section">buttons</a></li>
+                <li><a href="#list_section" data-icon="next" data-selected="selected" data-target="section">lists</a></li>
+                <li><a href="#form_section" data-icon="next" data-selected="selected" data-target="section">form</a></li>
+                <li><a href="#toast_section" data-icon="next" data-selected="selected" data-target="section">toast</a></li>
+                <li><a href="#popup_section" data-icon="next" data-selected="selected" data-target="section">popup</a></li>
+                <li><a href="#slider_section" data-icon="next" data-selected="selected" data-target="section">slider</a></li>
+                <li><a href="#scroll_section" data-icon="next" data-selected="selected" data-target="section">scroll</a></li>
+                <li><a href="#refresh_section" data-icon="next" data-selected="selected" data-target="section">pull2refresh</a></li>
+                <li><a href="#menu_section" data-icon="next" data-selected="selected" data-target="section">menu</a></li>
+                <li><a href="#calendar_section" data-icon="next" data-selected="selected" data-target="section">calendar</a></li>
+                <li><a href="#icon_section" data-icon="next" data-selected="selected" data-target="section">icons</a></li>
+                <li><a href="#color_section" data-icon="next" data-selected="selected" data-target="section">colors</a></li>
+                <li><a href="#" data-icon="next" >更多功能开发中</a></li>
+                <li class="anchor">others</li>
+                <li><a href="#" data-icon="exit" id="btn_show_welcome">欢迎页</a></li>
+                <li><a href="#" data-icon="exit" id="btn_exit_app">退出</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<div id="section_container">
+    <section id="index_section" class="active" data-transition="slideUp">
+        <header>
+            <nav class="left">
+                <a data-target="menu" data-icon="menu" href="#index_aside"></a>
+            </nav>
+            <h1 class="title">IT支撑</h1>
+        </header>
+        <article class="active" style="color: #666;padding: 15px;">
+            <form class="input-group" style="margin: 10px 0;">
+                <div class="input-row" >
+                    <label>账号：</label><input id="account" type="text" placeholder="用户账号">
+                </div>
+                 <div class="input-row">
+                    <label>密码：</label><input id="password" type="password" placeholder="请输入密码"/>
+                </div>
+            </form>
+            <div algin="center" class="demo-btn-group">
+                <a href="#Main_Page" class="button block" id="btn_login" onclick="return Login();" data-target="section" >登陆</a>
+                <a href="#" class="button block" id="cancel" onclick="test();return false;">取消</a>
+                <a id="gotoMainUI" href="#MainUI" class="button block" data-target="section" style="display:none"></a>
+            </div>
+        </article>
+        <script type="text/javascript">
+            $(function () { });
+            $('#btn_login').tap(function () {
+                J.showToast('恭喜，success', 'success');
+            })
+            $('#btn_t_error').tap(function () {
+                J.showToast('抱歉，error', 'error');
+            })
+            function Login() {
+                try {
+                    J.showToast('恭喜，success', 'success', 800);
+                    return true;
+                } catch (e) {
+                J.showToast(e.Message, "info");
+                }
+
+        }
+            function test() {
+                J.showToast('恭喜，success', 'error',800);
+            }
+    </script>
+    </section>
+</div>
+<!--<script type="text/javascript" src="js/lib/cordova.js"></script>-->
+<!-- lib -->
+<script type="text/javascript" src="js/lib/zepto.js"></script>
+<script type="text/javascript" src="js/lib/iscroll.js"></script>
+<script type="text/javascript" src="js/lib/template.min.js"></script>
+<script type="text/javascript" src="js/lib/Jingle.debug.js"></script>
+<script type="text/javascript" src="js/lib/zepto.touch2mouse.js"></script>
+<script type="text/javascript" src="js/lib/barcodescanner.js"></script>
+<!--- app --->
+<script type="text/javascript" src="js/app/app.js"></script>
+<script type="text/javascript" src="js/app/server.js"></script>
+<script type="text/javascript" src="js/app/PageControl.js"></script>
+<script type="text/javascript" src="js/app/GZ_Detail.js"></script>
+<!--<script type="text/javascript" src="js/app/jquery-1.10.2.min.js"></script>-->
+</body>
+</html>

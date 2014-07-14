@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{969D3FE3-347E-4364-815F-D78D5C3EF0A4}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEBAPP</RootNamespace>
+    <AssemblyName>WEBAPP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="ExitReceiver.cs" />
+    <Compile Include="JSServiceControl.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\WebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Web References\WebReference\DataService.wsdl" />
+    <None Include="Web References\WebReference\DataService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReference\DataService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReference\DataService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\app\app.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\barcodescanner.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\cordova.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\iscroll.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\Jingle.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\template.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\zepto.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\lib\zepto.touch2mouse.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\app.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\Jingle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\html\about_section.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\html\custom_aside.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\html\welcome.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoginUI.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\html\InfoDiffusion\InformationPlatform.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\app\jquery-1.10.2.min.js" />
+    <AndroidAsset Include="Assets\html\InfoDiffusion\GZ_Detail.html" />
+    <AndroidAsset Include="Assets\js\app\PageControl.js" />
+    <AndroidAsset Include="Assets\html\fileMessage.html" />
+    <AndroidAsset Include="Assets\html\history_record.html" />
+    <AndroidAsset Include="Assets\js\app\GZ_Detail.js" />
+    <AndroidAsset Include="Assets\html\Main_Page.html" />
+    <AndroidAsset Include="Assets\image\historyrecord.png" />
+    <AndroidAsset Include="Assets\image\message.png" />
+    <AndroidAsset Include="Assets\image\phone.png" />
+    <AndroidAsset Include="Assets\image\relationship.png" />
+    <AndroidAsset Include="Assets\js\app\server.js" />
+    <AndroidAsset Include="Assets\html\HistoryRecord\History_Detail.html" />
+    <AndroidAsset Include="Assets\html\HistoryRecord\History_Record.html" />
+    <AndroidAsset Include="Assets\html\Contact\Contact_Detail.html" />
+    <AndroidAsset Include="Assets\html\Contact\Contact.html" />
+    <AndroidAsset Include="Assets\html\RelationData\Relation_Detail.html" />
+    <AndroidAsset Include="Assets\html\RelationData\Relation_Data.html" />
+    <AndroidAsset Include="Assets\html\TypeList.html" />
+    <AndroidAsset Include="Assets\html\RegionList.html" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <None Include="Web References\WebReference\DataService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://127.0.0.1:4503/DataService">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference\</RelPath>
+      <UpdateFromURL>http://127.0.0.1:4503/DataService</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

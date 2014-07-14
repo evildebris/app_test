@@ -1,0 +1,3 @@
+WEBAPP.ExitReceiver;webapp.ExitReceiver
+WEBAPP.Activity1;webapp.Activity1
+WEBAPP.WebClient;webapp.WebClient

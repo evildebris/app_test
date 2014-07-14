@@ -1,0 +1,58 @@
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\ResolveAssemblyReference.cache
+E:\Xamarin\android\WEBAPP\WEBAPP\bin\Debug\WEBAPP.dll
+E:\Xamarin\android\WEBAPP\WEBAPP\bin\Debug\WEBAPP.pdb
+E:\Xamarin\android\WEBAPP\WEBAPP\bin\Debug\WEBAPP.dll.mdb
+E:\Xamarin\android\WEBAPP\WEBAPP\bin\Debug\WEBAPP.WEBAPP.apk
+E:\Xamarin\android\WEBAPP\WEBAPP\bin\Debug\WEBAPP.WEBAPP-Signed.apk
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\WEBAPP.dll
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\WEBAPP.pdb
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\android\bin\WEBAPP.WEBAPP.apk
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\res\layout\main.xml
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\res\values\strings.xml
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\res\drawable\icon.png
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\R.cs.flag
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\uploadflags.txt
+E:\Xamarin\android\WEBAPP\WEBAPP\obj\Debug\res\values\colors.xml
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\bin\Debug\WEBAPP.dll
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\bin\Debug\WEBAPP.pdb
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\bin\Debug\WEBAPP.dll.mdb
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\bin\Debug\WEBAPP.WEBAPP.apk
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\bin\Debug\WEBAPP.WEBAPP-Signed.apk
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\ResolveAssemblyReference.cache
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\WEBAPP.dll
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\WEBAPP.pdb
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\android\bin\WEBAPP.WEBAPP.apk
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\res\layout\main.xml
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\res\values\strings.xml
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\res\drawable\icon.png
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\res\values\colors.xml
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\R.cs.flag
+E:\Xamarin\四川\04 代码\值班长短信语音平台手机版\WEBAPP\WEBAPP\obj\Debug\uploadflags.txt
+E:\Xamarin\WEBAPP\WEBAPP\bin\Debug\WEBAPP.dll
+E:\Xamarin\WEBAPP\WEBAPP\bin\Debug\WEBAPP.pdb
+E:\Xamarin\WEBAPP\WEBAPP\bin\Debug\WEBAPP.dll.mdb
+E:\Xamarin\WEBAPP\WEBAPP\bin\Debug\WEBAPP.WEBAPP.apk
+E:\Xamarin\WEBAPP\WEBAPP\bin\Debug\WEBAPP.WEBAPP-Signed.apk
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\WEBAPP.dll
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\WEBAPP.pdb
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\android\bin\WEBAPP.WEBAPP.apk
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\res\layout\main.xml
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\res\values\strings.xml
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\res\values\colors.xml
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\res\drawable\icon.png
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\R.cs.flag
+E:\Xamarin\WEBAPP\WEBAPP\obj\Debug\uploadflags.txt
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Debug\WEBAPP.dll
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Debug\WEBAPP.pdb
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Debug\WEBAPP.dll.mdb
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Debug\WEBAPP.WEBAPP.apk
+E:\Xamarin\WEBAPP2.0\WEBAPP\bin\Debug\WEBAPP.WEBAPP-Signed.apk
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\WEBAPP.dll
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\WEBAPP.pdb
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\android\bin\WEBAPP.WEBAPP.apk
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\res\layout\main.xml
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\res\values\strings.xml
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\res\values\colors.xml
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\res\drawable\icon.png
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\R.cs.flag
+E:\Xamarin\WEBAPP2.0\WEBAPP\obj\Debug\uploadflags.txt

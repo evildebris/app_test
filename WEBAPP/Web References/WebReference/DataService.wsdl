@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DataService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:4503/DataService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://127.0.0.1:4503/DataService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:4503/DataService?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_test_InputMessage">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetJsonData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonData" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetJsonData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_ExecuteSql_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteSql" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_ExecuteSql_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteSqlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetDataByConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByConfig" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetDataByConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetJsonDataByConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonDataByConfig" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetJsonDataByConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonDataByConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_ExecuteSqlByConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteSqlByConfig" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_ExecuteSqlByConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteSqlByConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_SendSms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSms" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_SendSms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendSmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetExcelData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExcelData" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetExcelData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExcelDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_UploadCmnetFromExcel_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadCmnetFromExcel" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_UploadCmnetFromExcel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadCmnetFromExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_UploadFileAndUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFileAndUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_UploadFileAndUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFileAndUpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDataService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetData" message="tns:IDataService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetDataResponse" message="tns:IDataService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/test" message="tns:IDataService_test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/testResponse" message="tns:IDataService_test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetJsonData" message="tns:IDataService_GetJsonData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetJsonDataResponse" message="tns:IDataService_GetJsonData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSql">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/ExecuteSql" message="tns:IDataService_ExecuteSql_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/ExecuteSqlResponse" message="tns:IDataService_ExecuteSql_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetDataByConfig" message="tns:IDataService_GetDataByConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetDataByConfigResponse" message="tns:IDataService_GetDataByConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonDataByConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetJsonDataByConfig" message="tns:IDataService_GetJsonDataByConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetJsonDataByConfigResponse" message="tns:IDataService_GetJsonDataByConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSqlByConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/ExecuteSqlByConfig" message="tns:IDataService_ExecuteSqlByConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/ExecuteSqlByConfigResponse" message="tns:IDataService_ExecuteSqlByConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/SendSms" message="tns:IDataService_SendSms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/SendSmsResponse" message="tns:IDataService_SendSms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExcelData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetExcelData" message="tns:IDataService_GetExcelData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetExcelDataResponse" message="tns:IDataService_GetExcelData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadCmnetFromExcel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/UploadCmnetFromExcel" message="tns:IDataService_UploadCmnetFromExcel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/UploadCmnetFromExcelResponse" message="tns:IDataService_UploadCmnetFromExcel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileAndUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/UploadFileAndUpdate" message="tns:IDataService_UploadFileAndUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/UploadFileAndUpdateResponse" message="tns:IDataService_UploadFileAndUpdate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDataService" type="tns:IDataService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://tempuri.org/IDataService/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonData">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetJsonData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSql">
+      <soap:operation soapAction="http://tempuri.org/IDataService/ExecuteSql" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByConfig">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetDataByConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonDataByConfig">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetJsonDataByConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSqlByConfig">
+      <soap:operation soapAction="http://tempuri.org/IDataService/ExecuteSqlByConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <soap:operation soapAction="http://tempuri.org/IDataService/SendSms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExcelData">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetExcelData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadCmnetFromExcel">
+      <soap:operation soapAction="http://tempuri.org/IDataService/UploadCmnetFromExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileAndUpdate">
+      <soap:operation soapAction="http://tempuri.org/IDataService/UploadFileAndUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataService">
+    <wsdl:port name="BasicHttpBinding_IDataService" binding="tns:BasicHttpBinding_IDataService">
+      <soap:address location="http://127.0.0.1:4503/DataService/SVC" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

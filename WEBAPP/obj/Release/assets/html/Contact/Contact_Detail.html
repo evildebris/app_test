@@ -1,0 +1,138 @@
+<section id="Contact_Detail">
+    <header>
+        <nav class="left">
+            <a href="#"  data-icon="previous" data-target="back">返回</a>
+        </nav>
+        <h1 class="title">关联数据信息</h1>
+        <nav class="right">
+            <a href="#"  data-icon="user" data-target="back">XXX</a>
+        </nav>
+    </header>
+    <article class="active" style="color: #666;background-color:#EEF3F3;" data-scroll="true" >
+        <ul class="form-li inset-list">
+            <li>
+                <ul class="control-group divider">
+                    基础信息
+                </ul>
+            </li>
+            <li>
+                <ul class="control-group" data-selected="selected">
+                    <li style="width:35%;border:0;"><a href="#" data-icon="podcast" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;overflow:visible;">&nbsp;&nbsp;故障类型:</a></li>
+                    <li style="width:55%;text-align:right;">
+                    <a  href="#" id="select_center">公告</a>
+                    </li>
+                    <li id="select_center_id" data-icon="next" style="width:10%;"></li>
+                 </ul>
+            </li>
+            <li>
+                <ul class="control-group" data-selected="selected">
+                    <li style="width:35%;"><a href="#" data-icon="earth" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;overflow:visible;">&nbsp;&nbsp;发生地方:</a></li>
+                    <li style="width:55%;text-align:right;">
+                        <select id="Select" multiple="multiple" style="width:100%;">
+                            <option style="">成都</option>
+                            <option style="">资阳</option>
+                            <option style="">德阳</option>
+                            <option style="">甘孜</option> 
+                            <option style="">广安</option>
+                            <option style="">自贡</option>
+                            <option style="">宜宾</option>
+                        </select>
+                    </li>
+                    <li id="Li1" data-icon="next" style="width:10%;"></li>
+                 </ul>
+            </li>
+            <li>
+                <ul class="control-group" data-selected="selected">
+                    <li style="width:35%;"><a data-icon="calendar" href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;overflow:visible;">&nbsp;&nbsp;发生时间:</a></li>
+                    <li style="width:55%;text-align:right;">
+                    <a href="#" id="text_calendar" ><span></span></a>
+                    </li>
+                    <li id="btn_popup_calendar" data-icon="next" style="width:10%;"></li>
+                 </ul>
+            </li>
+             <li>
+                <ul class="control-group" data-selected="selected">
+                    <li style="width:90%;"><a href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;">历史记录查询</a></li>
+                    <li id="" data-icon="next" style="width:10%;"></li>
+                 </ul>
+            </li>
+        </ul>
+        <ul class="form-li inset-list">
+            <li>
+                <ul class="control-group divider">
+                    历史记录
+                </ul>
+            </li>
+            <li>
+                <ul class="control-group">
+                    <li style="width:35%;"><a href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;">是否重大故障</a></li>
+                    <li style="width:50%;text-align:right;">
+                        <div class="toggle" data-on="是" data-off="否">
+                        </div>
+                    </li>
+                    <li data-icon="next" style="width:10%;"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="control-group">
+                    <li style="width:35%;"><a href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;">是否发送语音</a></li>
+                    <li style="width:50%;text-align:right;">
+                        <div class="toggle" data-on="是" data-off="否">
+                        </div>
+                    </li>
+                    <li data-icon="next" style="width:10%;"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="control-group">
+                    <li style="width:35%;"><a href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;">短信发送状态</a></li>
+                    <li style="width:50%;">
+                        <div class="toggle" data-on="是" data-off="否">
+                        </div>
+                    </li>
+                    <li data-icon="next" style="width:10%;"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="control-group">
+                    <li style="width:35%;"><a href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;">收件人</a></li>
+                    <li style="width:50%;text-align:right;">
+                        <a>Administrtor</a>
+                    </li>
+                    <li data-icon="next" style="width:10%;"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="control-group">
+                    <li style="width:35%;"><a href="#" style="color:rgba(0,0,0,.6);font-weight: bold;text-align:left;">内容信息</a></li>
+                    <li style="width:50%;text-align:right;">
+                        <a>...</a>
+                    </li>
+                    <li data-icon="next" style="width:10%;"></li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+</section>
+<section id="history_record">
+    <header>
+        <nav class="left">
+            <a href="#" data-icon="undo" data-target="back">返回</a>
+        </nav>
+        <h1 class="title">历史记录</h1>
+    </header>
+    <article class="active" style="color: #666; padding: 15px;" data-scroll="true">
+        <ul class="list inset">
+            <li class="divider">是否重大故障:</li>
+            <li>
+                <div data-role="fieldcontain">
+                    <label for="slider"></label>
+                    <select name="slider" id="slider" data-role="slider">
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
+    </article>
+</section>

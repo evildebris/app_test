@@ -1,0 +1,82 @@
+<section id="history_record">
+    <header>
+        <nav class="left">
+            <a href="#" data-icon="undo" data-target="back">返回</a>
+        </nav>
+        <h1 class="title">历史记录</h1>
+    </header>
+    <article class="active" style="color: #666; padding: 15px;" data-scroll="true">
+        <ul class="list inset">
+            <li class="divider">是否重大故障:</li>
+            <li>
+                <div data-role="fieldcontain">
+                    <label for="slider"></label>
+                    <select name="slider" id="slider" data-role="slider">
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                    </select>
+                </div>
+            </li>
+            <li class="divider">是否发送语音:</li>
+            <li>
+                <div>
+                    <label for="slider"></label>
+                    <select name="slider" id="Select2">
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                    </select>
+                </div>
+            </li>
+            <li class="divider">收件人:</li>
+            <li>
+                <div>
+                    <input name="ReciveUer" type="text" />
+                </div>
+            </li>
+            <li class="divider">信息内容:</li>
+            <li>
+                <div>
+                    <input name="MessageInfo" type="text" style="width: auto; height: 100px" />
+                </div>
+            </li>
+            <li class="divider">短信发送状态:</li>
+            <li>
+                <div>
+                    <label for="slider"></label>
+                    <select name="slider" id="Select3">
+                        <option value="yes">成功</option>
+                        <option value="no">失败</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
+    </article>
+</section>
+
+
+<script type="text/javascript">
+    $('#btnOK').tap(function () {
+        J.showToast('信息发布', 'success');
+    })
+
+    function BeSure() {
+        try {
+            J.showToast('信息发布', 'success', 1000);
+            return true;
+        } catch (e) {
+            J.showToast(e.Message, "info");
+        }
+
+    }
+
+    function BeForce() {
+        try {
+            J.showToast('强制归档成功', 'success', 1000);
+            return true;
+        } catch (e) {
+            J.showToast(e.Message, "info");
+        }
+
+    }
+</script>
+
